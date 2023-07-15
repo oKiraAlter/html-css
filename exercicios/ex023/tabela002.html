@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption{
@@ -30,9 +31,19 @@
             text-align: right;
         }
 
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
         thead, tfoot{
-            background-color: gray;
+            background-color: rgb(68, 68, 68);
             color: white;
+        }
+
+        thead > tr> th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(68, 68, 68);
         }
     </style>
 </head>
@@ -42,8 +53,8 @@
         <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -66,10 +77,33 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>82.889.381</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla error quia incidunt fugiat fuga quidem illum numquam, pariatur nostrum quos ad corrupti rerum qui doloribus commodi optio atque ea quas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis qui debitis nostrum obcaecati a, exercitationem id dolorem labore cumque reiciendis voluptatum minus aperiam tempore ipsam accusantium est illum excepturi sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nostrum aperiam officia culpa consequatur dicta voluptas. Odit laboriosam velit asperiores? Ullam eius, obcaecati corrupti vero quia nostrum debitis quaerat necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, laboriosam eos amet provident animi velit voluptas qui voluptatibus. Sapiente voluptatum ex molestias praesentium sunt culpa magnam voluptatibus nam non pariatur?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla error quia incidunt fugiat fuga quidem illum numquam, pariatur nostrum quos ad corrupti rerum qui doloribus commodi optio atque ea quas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis qui debitis nostrum obcaecati a, exercitationem id dolorem labore cumque reiciendis voluptatum minus aperiam tempore ipsam accusantium est illum excepturi sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nostrum aperiam officia culpa consequatur dicta voluptas. Odit laboriosam velit asperiores? Ullam eius, obcaecati corrupti vero quia nostrum debitis quaerat necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, laboriosam eos amet provident animi velit voluptas qui voluptatibus. Sapiente voluptatum ex molestias praesentium sunt culpa magnam voluptatibus nam non pariatur?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla error quia incidunt fugiat fuga quidem illum numquam, pariatur nostrum quos ad corrupti rerum qui doloribus commodi optio atque ea quas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis qui debitis nostrum obcaecati a, exercitationem id dolorem labore cumque reiciendis voluptatum minus aperiam tempore ipsam accusantium est illum excepturi sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nostrum aperiam officia culpa consequatur dicta voluptas. Odit laboriosam velit asperiores? Ullam eius, obcaecati corrupti vero quia nostrum debitis quaerat necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, laboriosam eos amet provident animi velit voluptas qui voluptatibus. Sapiente voluptatum ex molestias praesentium sunt culpa magnam voluptatibus nam non pariatur?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla error quia incidunt fugiat fuga quidem illum numquam, pariatur nostrum quos ad corrupti rerum qui doloribus commodi optio atque ea quas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis qui debitis nostrum obcaecati a, exercitationem id dolorem labore cumque reiciendis voluptatum minus aperiam tempore ipsam accusantium est illum excepturi sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nostrum aperiam officia culpa consequatur dicta voluptas. Odit laboriosam velit asperiores? Ullam eius, obcaecati corrupti vero quia nostrum debitis quaerat necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, laboriosam eos amet provident animi velit voluptas qui voluptatibus. Sapiente voluptatum ex molestias praesentium sunt culpa magnam voluptatibus nam non pariatur?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla error quia incidunt fugiat fuga quidem illum numquam, pariatur nostrum quos ad corrupti rerum qui doloribus commodi optio atque ea quas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis qui debitis nostrum obcaecati a, exercitationem id dolorem labore cumque reiciendis voluptatum minus aperiam tempore ipsam accusantium est illum excepturi sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nostrum aperiam officia culpa consequatur dicta voluptas. Odit laboriosam velit asperiores? Ullam eius, obcaecati corrupti vero quia nostrum debitis quaerat necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, laboriosam eos amet provident animi velit voluptas qui voluptatibus. Sapiente voluptatum ex molestias praesentium sunt culpa magnam voluptatibus nam non pariatur?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla error quia incidunt fugiat fuga quidem illum numquam, pariatur nostrum quos ad corrupti rerum qui doloribus commodi optio atque ea quas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis qui debitis nostrum obcaecati a, exercitationem id dolorem labore cumque reiciendis voluptatum minus aperiam tempore ipsam accusantium est illum excepturi sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nostrum aperiam officia culpa consequatur dicta voluptas. Odit laboriosam velit asperiores? Ullam eius, obcaecati corrupti vero quia nostrum debitis quaerat necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, laboriosam eos amet provident animi velit voluptas qui voluptatibus. Sapiente voluptatum ex molestias praesentium sunt culpa magnam voluptatibus nam non pariatur?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla error quia incidunt fugiat fuga quidem illum numquam, pariatur nostrum quos ad corrupti rerum qui doloribus commodi optio atque ea quas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis qui debitis nostrum obcaecati a, exercitationem id dolorem labore cumque reiciendis voluptatum minus aperiam tempore ipsam accusantium est illum excepturi sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nostrum aperiam officia culpa consequatur dicta voluptas. Odit laboriosam velit asperiores? Ullam eius, obcaecati corrupti vero quia nostrum debitis quaerat necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, laboriosam eos amet provident animi velit voluptas qui voluptatibus. Sapiente voluptatum ex molestias praesentium sunt culpa magnam voluptatibus nam non pariatur?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla error quia incidunt fugiat fuga quidem illum numquam, pariatur nostrum quos ad corrupti rerum qui doloribus commodi optio atque ea quas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis qui debitis nostrum obcaecati a, exercitationem id dolorem labore cumque reiciendis voluptatum minus aperiam tempore ipsam accusantium est illum excepturi sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nostrum aperiam officia culpa consequatur dicta voluptas. Odit laboriosam velit asperiores? Ullam eius, obcaecati corrupti vero quia nostrum debitis quaerat necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, laboriosam eos amet provident animi velit voluptas qui voluptatibus. Sapiente voluptatum ex molestias praesentium sunt culpa magnam voluptatibus nam non pariatur?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla error quia incidunt fugiat fuga quidem illum numquam, pariatur nostrum quos ad corrupti rerum qui doloribus commodi optio atque ea quas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis qui debitis nostrum obcaecati a, exercitationem id dolorem labore cumque reiciendis voluptatum minus aperiam tempore ipsam accusantium est illum excepturi sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nostrum aperiam officia culpa consequatur dicta voluptas. Odit laboriosam velit asperiores? Ullam eius, obcaecati corrupti vero quia nostrum debitis quaerat necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, laboriosam eos amet provident animi velit voluptas qui voluptatibus. Sapiente voluptatum ex molestias praesentium sunt culpa magnam voluptatibus nam non pariatur?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla error quia incidunt fugiat fuga quidem illum numquam, pariatur nostrum quos ad corrupti rerum qui doloribus commodi optio atque ea quas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis qui debitis nostrum obcaecati a, exercitationem id dolorem labore cumque reiciendis voluptatum minus aperiam tempore ipsam accusantium est illum excepturi sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nostrum aperiam officia culpa consequatur dicta voluptas. Odit laboriosam velit asperiores? Ullam eius, obcaecati corrupti vero quia nostrum debitis quaerat necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, laboriosam eos amet provident animi velit voluptas qui voluptatibus. Sapiente voluptatum ex molestias praesentium sunt culpa magnam voluptatibus nam non pariatur?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla error quia incidunt fugiat fuga quidem illum numquam, pariatur nostrum quos ad corrupti rerum qui doloribus commodi optio atque ea quas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis qui debitis nostrum obcaecati a, exercitationem id dolorem labore cumque reiciendis voluptatum minus aperiam tempore ipsam accusantium est illum excepturi sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nostrum aperiam officia culpa consequatur dicta voluptas. Odit laboriosam velit asperiores? Ullam eius, obcaecati corrupti vero quia nostrum debitis quaerat necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, laboriosam eos amet provident animi velit voluptas qui voluptatibus. Sapiente voluptatum ex molestias praesentium sunt culpa magnam voluptatibus nam non pariatur?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla error quia incidunt fugiat fuga quidem illum numquam, pariatur nostrum quos ad corrupti rerum qui doloribus commodi optio atque ea quas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis qui debitis nostrum obcaecati a, exercitationem id dolorem labore cumque reiciendis voluptatum minus aperiam tempore ipsam accusantium est illum excepturi sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nostrum aperiam officia culpa consequatur dicta voluptas. Odit laboriosam velit asperiores? Ullam eius, obcaecati corrupti vero quia nostrum debitis quaerat necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, laboriosam eos amet provident animi velit voluptas qui voluptatibus. Sapiente voluptatum ex molestias praesentium sunt culpa magnam voluptatibus nam non pariatur?</p>
 </body>
 </html>
