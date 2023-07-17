@@ -32,31 +32,37 @@
         .white{
             color: white;
         }
+
+        div#container{
+            overflow-x: auto;
+        }
     </style>
 </head>
 <body>
     <h1>Exercício de Tabelas</h1>
 
-    <table>
-        <colgroup>
-            <col class="cnome">
-            <col class="cgrupo" span="2">
-            <col class="cprof">
-        </colgroup>
-        <thead>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="cnome">
+                <col class="cgrupo" span="2">
+                <col class="cprof">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Sexo</th>
+                    <th scope="col">Idade</th>
+                    <th scope="col" class="white">Profissão</th>
+                </tr>
+            </thead>
             <tr>
-                <th scope="col">Nome</th>
-                <th scope="col">Sexo</th>
-                <th scope="col">Idade</th>
-                <th scope="col" class="white">Profissão</th>
+                <td>Kira</td>
+                <td>M</td>
+                <td>21</td>
+                <td class="white">Programador</td>
             </tr>
-        </thead>
-        <tr>
-            <td>Kira</td>
-            <td>M</td>
-            <td>21</td>
-            <td class="white">Programador</td>
-        </tr>
-    </table>
+        </table>
+    </div>
 </body>
 </html>
